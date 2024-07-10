@@ -23,7 +23,7 @@ body {
   line-height: 1.5;
   display: grid;
   grid-template:
-    30%
+    minmax(5em, 40vh)
     max-content
     minmax(max-content, 1fr)
     max-content
