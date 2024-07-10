@@ -1,9 +1,18 @@
 @import "normalize";
 
+:root {
+  --color-link: #003b8c;
+  --color-visited: var(--color-link);
+}
+
 @mixin blur-background {
   background: #ffffff7f;
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
+}
+
+html {
+  background-color: #e2cce7;
 }
 
 body {
@@ -37,9 +46,16 @@ h1 {
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
   font-family: "Architects Daughter", sans-serif;
+  text-align: center;
+}
+
+a:link {
+  color: var(--color-link);
+}
+a:visited {
+  color: var(--color-visited);
 }
 
 header {
@@ -54,7 +70,7 @@ header {
   align-items: center;
   justify-content: center;
 
-  a {
+  a:link {
     color: rgb(241, 198, 136);
     text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     text-decoration: none;
@@ -74,11 +90,13 @@ nav {
   grid-template-columns: subgrid;
 
   @include blur-background;
+  font-family: "Architects Daughter", sans-serif;
 
   > menu {
     grid-column: 2;
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-evenly;
     column-gap: 2em;
     list-style: circle;
     padding: 0;
@@ -91,8 +109,19 @@ nav {
 }
 
 main {
+  display: grid;
+  grid-template-columns: subgrid;
   grid-row: 3;
-  grid-column: 2;
+  grid-column: 1 / -1;
+
+  > * {
+    grid-column: 2;
+  }
+
+  > .gallery {
+    grid-column: 1 / -1;
+    padding: 0 1em;
+  }
 
   // move anchors up a little so the heading below it doesn't end up hidden by the nav bar after scrolling.'
   a:not(:link) {
@@ -111,6 +140,9 @@ footer {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: subgrid;
+
+  padding: 1ex;
+  font-family: "Architects Daughter", sans-serif;
 
   > * {
     grid-column: 2;
