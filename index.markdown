@@ -23,7 +23,7 @@ toc:
 <a id="gallery-anchor"></a>
 
 ## Gallery
-{% include gallery.html %}
+{% include gallery.html asset_path="main-gallery" %}
 </section>
 
 <section>

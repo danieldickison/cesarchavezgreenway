@@ -2,6 +2,12 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
-<h3><a href="{{ page.url }}">{{ page.date | date_to_string }}</a></h3>
-<section>{{ content }}</section>
+<section>
+  <h2>{{ page.title }}</h2>
+  <h3><a href="{{ page.url }}">{{ page.date | date_to_string }}</a></h3>
+  {{ content }}
+</section>
+
+{% if page.gallery_path %}
+  {% include gallery.html asset_path=page.gallery_path %}
+{% endif %}

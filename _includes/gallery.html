@@ -1,6 +1,7 @@
 <ul class="gallery">
 {% for img in site.static_files %}
-  {% unless img.path contains "/gallery/" %} {% continue %} {% endunless %}
+
+  {% unless img.path contains include.asset_path %} {% continue %} {% endunless %}
   {% if img.name contains "-thumb." %} {% continue %} {% endif %}
 
   <li>

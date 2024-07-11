@@ -2,6 +2,7 @@
 layout: post
 title:  "Cesar Chavez Greenway Kickoff"
 date:   2024-07-06 16:00:00 -0700
+gallery_path: kickoff
 ---
 Dear neighbors,
 
@@ -17,6 +18,3 @@ And happy holiday weekend! We hope everyone is enjoying this sublime weather.
 
 Cheers!
 Peralta Hill Neighboring Group
-
-![crowd gathers around the kickoff](/assets/images/kickoff-crowd.jpg)
-![jazz trio on the sidewalk](/assets/images/kickoff-band.jpg)
