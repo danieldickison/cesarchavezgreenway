@@ -15,11 +15,22 @@ body {
   min-height: 100vh;
   min-height: 100lvh;
   background-image: linear-gradient(
-    25deg,
-    rgb(222, 203, 184),
-    rgb(159, 86, 234)
+    35deg,
+    #ebd8c5,
+    rgb(230, 180, 165) 46.22%,
+    #b36a55
   );
   background-attachment: fixed;
+
+  @media (max-width: 400px) {
+    background-image: linear-gradient(
+      85deg,
+      #ebd8c5,
+      rgb(230, 180, 165) 46.22%,
+      #b36a55
+    );
+    background-attachment: initial;
+  }
 
   font-family: "Karla", sans-serif;
   font-size: 20px;
@@ -37,14 +48,21 @@ body {
 
 h1 {
   text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
   font-size: 2.5em;
 }
 
-h1,
 h2,
 h3 {
-  font-family: "Architects Daughter", sans-serif;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
   text-align: center;
+}
+
+.post h2,
+.post h3 {
+  font-family: "Architects Daughter", cursive;
 }
 
 a:link {
@@ -71,7 +89,7 @@ header {
 
   a:any-link {
     color: inherit;
-    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     text-decoration: none;
     &:hover {
       text-decoration: underline;
@@ -89,7 +107,8 @@ nav {
   grid-template-columns: subgrid;
 
   @include blur-background;
-  font-family: "Architects Daughter", sans-serif;
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
 
   > menu {
     grid-column: 2;
@@ -97,7 +116,7 @@ nav {
     flex-flow: row wrap;
     justify-content: space-evenly;
     column-gap: 2em;
-    list-style: circle;
+    list-style: none;
     padding: 0;
     margin: 0;
 
@@ -132,6 +151,10 @@ main {
     height: 1px;
     background: transparent;
   }
+
+  ul.posts {
+    font-family: "Architects Daughter", cursive;
+  }
 }
 
 footer {
@@ -142,7 +165,7 @@ footer {
   grid-template-columns: subgrid;
 
   padding: 1ex;
-  font-family: "Architects Daughter", sans-serif;
+  font-family: "Architects Daughter", cursive;
 
   > * {
     grid-column: 2;
