@@ -167,8 +167,11 @@ footer {
   padding: 1ex;
   font-family: "Architects Daughter", cursive;
 
-  > * {
+  > div {
     grid-column: 2;
-    text-align: right;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    gap: 1ex;
   }
 }

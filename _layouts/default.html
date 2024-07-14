@@ -6,6 +6,23 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
+
+    <link
+      rel="icon"
+      sizes="512x512"
+      href="{{ '/assets/icons/logo-512.webp' | relative_url }}"
+    />
+    <link
+      rel="icon"
+      sizes="32x32"
+      href="{{ '/assets/icons/logo-32.png' | relative_url }}"
+    />
+    <link
+      rel="icon"
+      sizes="16x16"
+      href="{{ '/assets/icons/logo-16.png' | relative_url }}"
+    />
+
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,200..800;1,200..800&display=swap");
     </style>
@@ -39,7 +56,13 @@
     {% endif %}
     <main>{{ content }}</main>
     <footer>
-      <a href="mailto:{{ site.email }}">Peralta Hill Neighboring Group</a>
+      <div>
+        <img
+          src="{{ '/assets/icons/logo-32.png' | relative_url }}"
+          alt="Peralta Hill Neighboring Group logo"
+        />
+        <a href="mailto:{{ site.email }}"> Peralta Hill Neighboring Group </a>
+      </div>
     </footer>
   </body>
 </html>
