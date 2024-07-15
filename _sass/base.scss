@@ -65,6 +65,11 @@ h3 {
   font-family: "Architects Daughter", cursive;
 }
 
+a:any-link {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
 a:link {
   color: var(--color-link);
 }
