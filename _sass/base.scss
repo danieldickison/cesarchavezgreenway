@@ -180,3 +180,12 @@ footer {
     gap: 1ex;
   }
 }
+
+.signature {
+  font-family: "Architects Daughter";
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1ex;
+}

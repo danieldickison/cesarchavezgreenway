@@ -17,4 +17,4 @@ Stay tuned for updates soon and meanwhile please connect us to friends and neigh
 And happy holiday weekend! We hope everyone is enjoying this sublime weather.
 
 Cheers!
-Peralta Hill Neighboring Group
+{% include signature.markdown %}
