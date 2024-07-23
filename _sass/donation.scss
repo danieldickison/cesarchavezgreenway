@@ -1,0 +1,20 @@
+.donation-box {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+  padding: 1em;
+  gap: 1em;
+
+  background-color: #ffffff33;
+  box-shadow: 0 5px 12px #00000033;
+
+  > givebutter-goal-bar {
+    flex-grow: 1;
+  }
+
+  > givebutter-button {
+    flex-grow: 0;
+  }
+}

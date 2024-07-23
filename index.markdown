@@ -2,6 +2,8 @@
 toc:
   - id: about-anchor
     title: About
+  - id: give-anchor
+    title: Give
   - id: gallery-anchor
     title: Gallery
   - id: faq-anchor
@@ -9,7 +11,7 @@ toc:
   - id: news-anchor
     title: News
   - id: contact-anchor
-    title: Contact & Give
+    title: Contact
 ---
 
 {::options parse_block_html="true" /}
@@ -17,6 +19,13 @@ toc:
 <section>
 <a id="about-anchor"></a>
 {% include about.markdown %}
+</section>
+
+<section>
+<a id="give-anchor"></a>
+
+## Give
+{% include donation.markdown %}
 </section>
 
 <section class="gallery">
