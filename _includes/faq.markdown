@@ -1,2 +1,2 @@
 When will the park open?
-: 2025, hopefully.
+: We’re hoping to start construction in Spring 2025 and open in August.
