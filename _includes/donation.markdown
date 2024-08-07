@@ -14,4 +14,4 @@
   ></givebutter-button>
 </div>
 
-Donations are tax deductible. Check out our [campaign page on Givebutter][give] for more info on our fundraising.
+Donations are tax deductible. Check out our [campaign page on Givebutter][give] for more info on our fundraising or to use Apple Pay.
